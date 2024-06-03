@@ -8,6 +8,10 @@ https://www.tensorflow.org/hub/tutorials/movenet
 let video, bodypose, pose, keypoint, detector;
 let poses = [];
 
+ function preload(){
+  carImg = loadImage("car.gif")
+ }
+
 async function init() {
   const detectorConfig = {
     modelType: poseDetection.movenet.modelType.MULTIPOSE_LIGHTNING,
@@ -98,7 +102,7 @@ function drawSkeleton() {
       if (pose.keypoints[j].score > 0.1 && pose.keypoints[j + 2].score > 0.1) {
         partA = pose.keypoints[j];
         partB = pose.keypoints[j + 2];
-        line(partA.x, partA.y, partB.x, partB.y);
+         image(carImg,partA.x-25,partA.y-25,50,50)
         
       }
     }
