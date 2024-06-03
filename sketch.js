@@ -71,13 +71,13 @@ function drawSkeleton() {
       }
     if (partB.score > 0.1) {
      image(carImg,partB.x,partB.y-25,50,50)
-    if (partB.score > 0.1) {
-      push()
-      textSize(40)
-      scale(-1,1)
-      text("412730425,陳沛安",partA.x-width,partA.y-100)
-     pop()
-        }
+ //   if (partB.score > 0.1) {
+  //    push()
+    //  textSize(40)
+      //scale(-1,1)
+      //text("412730425,陳沛安",partA.x-width,partA.y-100)
+   //  pop()
+     //   }
        }
       } 
      }
