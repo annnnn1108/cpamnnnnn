@@ -70,7 +70,7 @@ function drawSkeleton() {
      // image(carImg,partA.x+100,partA.y-25,50,50)
       }
     if (partA.score > 0.1 && partB.score > 0.1) {
-     image(carImg,partA.x+100,partA.y,50,50)
+     image(carImg,partB.x,partB.y,50,50)
         }
     } 
       }
